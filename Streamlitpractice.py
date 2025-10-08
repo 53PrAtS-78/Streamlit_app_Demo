@@ -8,6 +8,8 @@ from urllib.request import urlopen
 import json
 from copy import deepcopy
 
+#Matplotlib error needs to be resolved
+
 @st.cache_data #It helps streamlit in memorizing the data as it used again and again
 def load_data(path):
     df = pd.read_csv(path)
