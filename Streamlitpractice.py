@@ -15,7 +15,7 @@ def load_data(path):
     df = pd.read_csv(path)
     return df
 
-mpg_df_raw = load_data(path = '../Day 10/data/data/mpg.csv') #It will read the original file again and again consuming more time
+mpg_df_raw = load_data(path = 'mpg.csv') #It will read the original file again and again consuming more time
 mpg_df = deepcopy(mpg_df_raw) #Work on the copy
 
 st.title("Introduction to streamlit")
